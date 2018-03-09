@@ -15,7 +15,7 @@ router.get('/place', (req, res) => {
     .then(getDetails)
     .then(details => {
       res.status(STATUS_SUCCESS);
-      res.send( {places: details} );
+      res.send( {place: details} );
     })
     .catch(err => {
       console.log(err);
